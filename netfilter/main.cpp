@@ -5,11 +5,13 @@
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    netfilter w;
-    login Login;
-    if(Login.exec() == QDialog::Accepted)
+    netfilter filter;
+    login userLogin;
+
+    if(userLogin.exec() == QDialog::Accepted)
     {
-        w.show();
+        filter.add_device();
+        filter.show();
         return app.exec();
     }
 

@@ -14,22 +14,15 @@ class netfilter : public QWidget
 public:
     explicit netfilter(QWidget *parent = 0);
     ~netfilter();
+    void add_device();
     void add_deny(unsigned int, int);
     void del_deny(unsigned int, int);
 
-    
 private slots:
     void on_Add_IP_Btn_clicked();
-
     void on_Del_IP_Btn_clicked();
-
     void on_Add_PORT_Btn_clicked();
-
     void on_Del_PORT_Btn_clicked();
-
-    void on_Display_IP_Btn_clicked();
-
-    void on_Disay_PORT_Btn_clicked();
 
 private:
     Ui::netfilter *ui;
