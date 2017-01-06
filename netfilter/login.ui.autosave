@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>User Login</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>140</x>

@@ -6,181 +6,226 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>748</width>
-    <height>443</height>
+    <width>582</width>
+    <height>442</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>netfilter</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>90</y>
-     <width>31</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>IP:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>90</y>
-     <width>51</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PORT:</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="IPLineEdit">
-   <property name="geometry">
-    <rect>
-     <x>150</x>
-     <y>86</y>
-     <width>171</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="PORTLineEdit">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>80</y>
-     <width>181</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>320</x>
-     <y>30</y>
-     <width>121</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>17</pointsize>
-     <weight>75</weight>
-     <italic>true</italic>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>NETFILTER</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Add_IP_Btn">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>190</y>
-     <width>99</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add_IP</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Del_IP_Btn">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>190</y>
-     <width>99</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Del_IP</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Display_IP_Btn">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>230</y>
-     <width>201</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Display_IP</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Add_PORT_Btn">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>190</y>
-     <width>99</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Add_PORT</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Del_PORT_Btn">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>190</y>
-     <width>99</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Del_PORT</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="Disay_PORT_Btn">
-   <property name="geometry">
-    <rect>
-     <x>470</x>
-     <y>230</y>
-     <width>191</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Display_PORT</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>280</y>
-     <width>511</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textview">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>340</y>
-     <width>511</width>
-     <height>78</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QLabel" name="label_4">
+     <property name="font">
+      <font>
+       <pointsize>17</pointsize>
+       <weight>75</weight>
+       <italic>true</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-style:normal;&quot;&gt;NetFilter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Message:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="messageLabel">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;IP   to   be   blocked &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="IPLineEdit">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Add_IP_Btn">
+       <property name="text">
+        <string>Add IP</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;PORT to be disabled&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="PORTLineEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Add_PORT_Btn">
+       <property name="text">
+        <string>Add PORT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Blocked IP List&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="ipListWidget"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Del_IP_Btn">
+           <property name="text">
+            <string>Delete IP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Blocked PORT List&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QListWidget" name="portListWidget"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Del_PORT_Btn">
+           <property name="text">
+            <string>Delete PORT</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
  <connections/>
